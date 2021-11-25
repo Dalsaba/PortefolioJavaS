@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Js n°1</title>
+    <link rel="stylesheet" href="./css/projet.css">
+    <script src="./js/script.js" type="text/javascript"></script>
+</head>
+
+<body  id ="head1">
+    <main>
+        <header></header>
+        <section class="conteneur">
+            <section class="sectionPrincipale">
+                <section class="section1">
+                    <div class="ligne1">
+                        <div class="ligne1-gauche" >
+                            <h4>Projet 1</h4>
+                        </div>
+                        <div class="ligne1-droite">
+                            <button onclick=add()>A!</button>
+                            <button onclick=replace()>R!</button>
+                            <button onclick=suppr()>S!</button>
+                            <button onclick=notif()>N!</button>
+                            <button id="myBtn">Open Modal</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Some text in the Modal..</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="ligne2">
+                        <div class="ligne2-gauche">
+                            <p id="textboxnooverflow">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                        </div>
+                        <div class="ligne2-droite">
+                            <img class="profile"
+                            src="https://picsum.photos/300/300"
+                            alt="profile">
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+        </section>
+        <footer></footer>
+    </main>
+    <script type="text/javascript">
+        function suppr() {
+            var div = document.createElement("p");
+            document.getElementById("textboxnooverflow").innerHTML = "";
+            document.getElementById("textboxnooverflow").appendChild(div);
+        }
+        function replace() {
+            const entry = String(window.prompt("Quelles modifications?", ""));
+            var div = document.createElement("p");
+            document.getElementById("textboxnooverflow").innerHTML = entry;
+            document.getElementById("textboxnooverflow").appendChild(div);
+        }
+        function add() {
+            const entry = String(window.prompt("Quelles modifications?", ""));
+            var div = document.createElement("p");
+            div.innerHTML = entry; 
+            document.getElementById("textboxnooverflow").appendChild(div);
+        }
+
+        
+        function close(){ 
+        document.getElementById('superposition').setAttribute("style", "display:none");
+        } 
+
+        function notif() {
+            var div = document.createElement("div");
+            div.innerHTML = "Notification example"; 
+            div.className = "superposition"; 
+            document.getElementById("head1").appendChild(div);
+            setTimeout(close, 1500);            
+        }
+     </script>
+
+</body>
+</html>
+
+<!-- modification du DOM pour les images projets + les notifs-->

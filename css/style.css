@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+  /* Architecture*/
+
+
+.sectionPrincipale{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+    height: 500px; 
+    background-image: url("../image/wallpaper1.jpg");
+    background-size: 1400px;
+}
+
+.section1{
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.section2{
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.section2-1{
+    width: 30%;
+    height: 100%;
+    text-overflow: ellipsis; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#section2-2{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.projetBox{
+    background-color:#87CEFA;
+    min-width: 40%; 
+    height: 25%;
+    margin: 4%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.projetBox:hover {
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+  /* Button*/
+
+
+button{
+    margin: 2%;
+}
+
+  /* Text*/
+
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+.h11 {
+    color: #1E90FF;
+}
+.h12 {
+    color: #727f86;
+}
+
+.textboxnooverflow {
+    color: #727f86;
+    font-size: 80%;
+    margin: 5%;
+    
+}
+h4 {
+    color: #1E90FF;
+    display: flex;
+    justify-content: center;
+
+    
+}

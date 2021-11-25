@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Js n°1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <main>
+        <header></header>
+        <section class="conteneur">
+            <section class="sectionPrincipale">
+                <section class="section1">
+                    <p> - Portefolio - </p>
+                    <h1 class="h11">Lucy Correia Lopes</h1>
+                    <h1 class="h12">IPSSI MLV - BD 22.1</h1>
+                    <button type="button" class="btn btn-primary btn-sm">
+                        <a href=cv.html>
+                            Voir CV
+                        </a>
+                    </button>
+                    <script>affich()</script>
+                </section>
+                <section class="section2">
+                    <section class="section2-1">
+                        <h4>Projets réalisés</h4>
+                            <p class="textboxnooverflow">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                    </section>
+                    <section id="section2-2">
+                        <!-- Ma liste de projet via l'ID -->
+                    </section>
+                </section>
+            </section>
+        </section>
+        <footer></footer>
+    </main>
+
+
+    <script type="text/javascript">
+        const projet = ['Projet 1', 'Projet 2', 'Projet 3', 'Projet 4', 'Projet 5', 'Projet 6']
+
+        function updateColor() {
+             Math.floor(Math.random() * 255);
+            } ; 
+            
+        function myFunction() {
+            var btn = document.createElement("a");
+            btn.innerHTML="click";
+            btn.setAttribute("href","https://www.google.com");
+            btn.setAttribute("target","_blank");
+            document.getElementById("projetBox").appendChild(btn);
+        }
+
+// une lambda ne permet pas d'utiliser une fonction. 
+//Utiliser des fonctions à l'intéreur des map / forEach
+        projet.forEach(function (element) {
+            var div = document.createElement("button");
+            div.className = "projetBox";
+            div.innerHTML = element;
+            div.setAttribute("onClick", "myFunction()");
+            document.getElementById("section2-2").appendChild(div);
+        });
+     </script>
+
+
+
+
+</body>
+</html>
