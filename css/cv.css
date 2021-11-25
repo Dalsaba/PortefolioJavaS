@@ -3,6 +3,88 @@
     padding: 0;
 }
 
+body{
+}
+
+main{
+}
+
+.CV_content{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 90%;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+.sectionDeux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  height: 30%;
+}
+
+.sectionTrois {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: blue dashed;
+  margin: 5%;
+  min-height: 30%;
+}
+
+
+
+.descriptionCVPart-left{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sectionTrois-left{
+  border: saddlebrown dashed;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sectionTrois-un-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: deepskyblue solid;
+}
+
+#tata {
+  width: 80%;
+  border: deeppink dashed;
+  margin : 5%; 
+}
+
+.descriptionCVPart-right{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   /* Architecture*/
 
@@ -10,6 +92,10 @@
     border : black solid
 
   }
+.style14 { 
+	border-top: 3px solid #D79A10;
+
+}
 
 
 
@@ -18,7 +104,7 @@
     display: flex;
     flex-direction: row; 
     justify-content: space-around; 
-    align-items: center;
+    align-items: flex-end;
     height: 500px;
     width : 100% ; 
     background-image: url("../image/wallpaper1.jpg");
@@ -27,9 +113,6 @@
 }
 
 .section1{
-    background-image: url("../image/cv_wallpaper1.jpg");
-    background-size: cover;
-    border: red solid;
     width: 90%;
     height: 100vh;
     overflow: scroll;
@@ -42,7 +125,6 @@
 
 .section1-1{
     background-color: white;
-    border: purple solid;
     min-width: 95%;
     height: 99%;
     display: flex;
@@ -50,12 +132,13 @@
     
 
 }
-.section1-1-header {
+#section1-1-header {
   display: flex;
   flex-direction: row;
   min-width: 90%;
   width: 50%;
   height: 45%;
+  border: black solid;
 }
 
 .section1-header {
@@ -110,7 +193,13 @@
 
 button{
     margin: 2%;
-    width: 15%;
+    width: 5%;
+}
+
+#adminButton {
+  background: transparent;
+  border: none !important;
+  margin: 10%;
 }
 
   /* Text*/
@@ -232,3 +321,4 @@ input {
   from {opacity: 0} 
   to {opacity: 1}
 }
+
