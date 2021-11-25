@@ -15,7 +15,7 @@
     align-items: center;
     height: 500px; 
     background-image: url("../image/wallpaper1.jpg");
-    background-size: 1400px;
+    background-size: cover;
 }
 
 .section1{
@@ -64,7 +64,7 @@
     background-color:#87CEFA;
     min-width: 40%; 
     height: 25%;
-    margin: 4%;
+    margin: 3%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
