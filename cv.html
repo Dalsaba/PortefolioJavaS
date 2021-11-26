@@ -54,28 +54,22 @@
                 <div class="sectionTrois-left">
                     <div class="sectionTrois-un-left">
                         <div class="separator1">
-                            <h3>A propos</h3>
+                            <h3 id="titleCV">A propos</h3>
                         </div>
                         <div class="separator2">
-                            <button onclick="addv2(\'' + aproposText + '\')" title="Ajouter" id="adminButtonetest">
+                            <button onclick="add1()" title="Ajouter" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
                               </svg>
                             </button>
-                            <button onclick="add()" title="Ajouter" id="adminButton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
-                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                              </svg>
-                            </button>
-                            <button onclick="replace()" title="Remplacer" id="adminButton">
+                            <button onclick="replace1()" title="Remplacer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
                                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                   </svg>
                             </button>
-                            <button onclick="suppr()" title="Supprimer" id="adminButton">
+                            <button onclick="suppr1()" title="Supprimer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-x-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
                                   </svg>
@@ -96,26 +90,26 @@
                             <h3>Expériences</h3>
                         </div>
                         <div class="separator2">
-                            <button title="Ajouter" id="adminButton">
+                            <button onclick="add2()"  title="Ajouter" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
                               </svg>
                             </button>
-                            <button onclick="replace()" title="Remplacer" id="adminButton">
+                            <button onclick="replace2()" title="Remplacer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
                                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                   </svg>
                             </button>
-                            <button onclick="suppr()" title="Supprimer" id="adminButton">
+                            <button onclick="suppr2()" title="Supprimer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-x-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
                                   </svg>
                             </button>
                         </div>
                         </div>
-                        <div id="tata" class="tata">
+                        <div id="exptext" class="tata">
                             <p>Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? 
                                 Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? </p>
     
@@ -131,26 +125,26 @@
                             <h3>Compétences</h3>
                         </div>
                         <div class="separator2">
-                            <button onclick="add()" title="Ajouter" id="adminButton">
+                            <button onclick="add3()" title="Ajouter" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
                               </svg>
                             </button>
-                            <button onclick="replace()" title="Remplacer" id="adminButton">
+                            <button onclick="replace3()" title="Remplacer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
                                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                   </svg>
                             </button>
-                            <button onclick="suppr()" title="Supprimer" id="adminButton">
+                            <button onclick="suppr3()" title="Supprimer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-x-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
                                   </svg>
                             </button>
                         </div>
                         </div>
-                        <div id="tata" class="tata">
+                        <div id="comptext" class="tata">
                             <p>Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? 
                                 Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? </p>
     
@@ -164,26 +158,26 @@
                             <h3>Formation</h3>
                         </div>
                         <div class="separator2">
-                            <button onclick="add()" title="Ajouter" id="adminButton">
+                            <button onclick="add4()" title="Ajouter" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
                               </svg>
                             </button>
-                            <button onclick="replace()" title="Remplacer" id="adminButton">
+                            <button onclick="replace4()" title="Remplacer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
                                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                                   </svg>
                             </button>
-                            <button onclick="suppr()" title="Supprimer" id="adminButton">
+                            <button onclick="suppr4()" title="Supprimer" id="adminButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-x-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
                                   </svg>
                             </button>
                         </div>
                         </div>
-                        <div id="tata" class="tata">
+                        <div id="formtext" class="tata">
                             <p>Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? 
                                 Lorem ipsum dolor sit amet. Ut similique commodi sit ipsum facere sit rerum magnam et iusto soluta. Rem veniam quaerat aut ducimus quia a internos delectus quo cumque corporis ut alias possimus rem sint modi sit galisum magni? </p>
     
@@ -191,70 +185,41 @@
                     </div>
 
                 </div>
-            </section>   
+            </section> 
+            <section class="sectionQuatre">
+                <div id="downloadButton">   
+
+                </div>
+            </section>       
             <section class="sectionQuatre">
                         <div id="downloadButton">   
-                            <button title="Telecharger" id="adminButton">
+                            <div class="divfoot">
+                                <button title="Telecharger" id="adminButton2">
+                                    <a href=cv..html>                                
+                                        <img src="./image/uk.png" width="50" height="40" >
+                                    </a>
+                                </button> 
+                            </div>
+                            <div class="divfoot2">
+                                <button title="Telecharger" id="adminButton">
                                     <a href=cv.html download="cv.html">                                
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
                                         </svg>
                                     </a>
-
                             </button> 
+                            </div>
+
                         </div>
-            </section>    
-            </section>
-            
+            </section>                
         </section>
         <footer></footer>
     </main>
 
 
     <script type="text/javascript">
-        function suppr() {
-            var div = document.createElement("p");
-            document.getElementById("tata").innerHTML = "";
-            document.getElementById("tata").appendChild(div);
-        }
-        function replace() {
-            const entry = String(window.prompt("Quelles modifications?", ""));
-            var div = document.createElement("p");
-            document.getElementById("tata").innerHTML = entry;
-            document.getElementById("tata").appendChild(div);
-        }
-        function add() {
-            const entry = String(window.prompt("Quels ajouts?", ""));
-            var div = document.createElement("p");
-            div.innerHTML = entry; 
-            document.getElementById("tata").appendChild(div);
-        }
-        function addv2(nom) {
-            const entry = String(window.prompt("Quels ajouts???", ""));
-            var div = document.createElement("p");
-            div.innerHTML = entry; 
-            document.getElementById(\'' + nom + '\').appendChild(div);
-        }
 
         
-        function close(){ 
-        document.getElementById('superposition').setAttribute("style", "display:none");
-        } 
-
-        function notif() {
-            var div = document.createElement("div");
-            div.innerHTML = "Notification example"; 
-            div.className = "superposition"; 
-            document.getElementById("head1").appendChild(div);
-            setTimeout(close, 1500);            
-        }
-
-
-        function notif2() {
-    news = window.open("", "NewsWindow", "width=900, height=700");
-    news.document.write("<p>The 'NewsWindow' will only appearing for 3 seconds.</p>");
-    tmot = setTimeout(function(){window.open('http://www.yahoo.com', "NewsWindow")},2000);
-    tmot = setTimeout(function(){news.close()}, 5000);}   
 
     var menuButton = document.querySelector('#menu-button');
     var menu = document.querySelector('#menu');
@@ -263,12 +228,6 @@
     menuButton.classList.toggle('close');
 });
 
-    var inputElement = document.querySelector('#adminButton');
-    inputElement.addEventListener('click', function(){
-        addv2(nom);
-    });
-
-    document.getElementById("separator2").appendChild(inputElement);
 
      </script>
 

@@ -98,19 +98,21 @@ a {
     color: #1E90FF;
 }
 .h12 {
-    color: #727f86;
+    color: #c7c7c7;
 }
 
 .textboxnooverflow {
     color: #727f86;
-    font-size: 80%;
+    font-size: 80%;    
     margin: 5%;
-    
+
 }
 h4 {
     color: #1E90FF;
     display: flex;
     justify-content: center;
+    margin: 5%;
+
 
     
 }
